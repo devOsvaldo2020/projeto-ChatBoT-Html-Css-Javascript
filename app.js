@@ -1,5 +1,5 @@
 function talk() {
-    var know = {
+    const know = {
         "Who are you" : "Hello, Codewith_random here ",
         "Who are you not" : "Good: )",
         "What can i do for you" : "I have my family os 5000 menbers, i don't have follower, have supportive Family",
@@ -12,7 +12,7 @@ function talk() {
         "Tchau": "Ok! Nos encontraremos em breve .."
     };
     
-    var user = document.getElementById('userBox').value ;
+    const user = document.getElementById('userBox').value ;
     document.getElementById('chatLog').innerHTML = user + "<br>";
     if(user in know){
         document.getElementById('chatLog').innerHTML = know[user] + "<br>";
