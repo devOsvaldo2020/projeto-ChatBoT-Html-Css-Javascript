@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ChatBoot com Javascript</title>
+</head>
+<body>
+    <div class="glass">
+        <h1>Faça sua pergunta?</h1>
+        <h2>Sim, faça alguma pergunta</h2>
+
+        <div class="input">
+            <input type="text"
+            id="userBox" 
+            onkeydown="if(event.keyCode == 13){ talk()}"
+            placeholder="Digite sua pergunta"
+            />
+        </div>
+
+        <p id="chatLog">Responta aparecerá aqui</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
